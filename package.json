@@ -1,0 +1,26 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "Decentralized autonomous lottery",
+  "homepage": "https://github.com/berkerol/lottery",
+  "bugs": {
+    "url": "https://github.com/berkerol/lottery/issues",
+    "email": "berk.erol@boun.edu.tr"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Berk Erol <berk.erol@boun.edu.tr> (https://berkerol.github.io/)",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkerol/lottery.git"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "truffle-assertions": "^0.8.2"
+  }
+}
