@@ -5,7 +5,9 @@
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
 [![license](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://github.com/berkerol/lottery/blob/master/LICENSE)
 
-Decentralized autonomous lottery. Submit the hash of a chosen random number and pay 2 ethers then reveal the chosen random number and given ticket number. One round consists of submission and reveal stages which are 1 day long. Withdraw the prize anytime after the round ends. Runs on Ropsten Test Network. You need [Metamask](https://metamask.io/) or another wallet to interact. You can view it [here](https://berkerol.github.io/lottery/lottery.html).
+Decentralized autonomous lottery. Submit the hash of a chosen random number and pay 2 ethers then reveal the chosen random number and given ticket number. One round consists of submission and reveal stages which are 1 day long. Withdraw the prize anytime after the round ends. Runs on Ropsten Test Network. You need [Metamask](https://metamask.io/) or another wallet to interact.
+
+[![button](view.png)](https://berkerol.github.io/lottery/lottery.html)
 
 ## Prizes
 
