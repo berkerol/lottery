@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lottery</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-122994978-1', 'auto');
@@ -13,9 +13,7 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   <script async src="lottery.js"></script>
-  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,32 +21,56 @@
     <h1 class="mt-3 text-center">Lottery</h1>
     <h2 class="mt-3 text-center" id="stage"></h2>
     <h3 class="mt-3">Submit</h3>
-    <form class="form-inline" action="javascript:submit();">
-      <label for="submitHash">Hash</label>
-      <input type="text" class="form-control ml-2 mr-2" id="submitHash" />
-      <button type="submit" class="btn btn-primary">Submit</button>
+    <form class="row row-cols-sm-auto g-3 align-items-center" action="javascript:submit();">
+      <div class="col-12">
+        <label class="form-label" for="submitHash">Hash</label>
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" id="submitHash" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
     <p id="submitResult"></p>
     <hr/>
     <h3 class="mt-3">Reveal</h3>
-    <form class="form-inline" action="javascript:reveal();">
-      <label for="revealRandomNumber">Random number</label>
-      <input type="text" class="form-control ml-2 mr-2" id="revealRandomNumber" />
-      <label for="revealTicketNumber">Ticket number</label>
-      <input type="text" class="form-control ml-2 mr-2" id="revealTicketNumber" />
-      <button type="submit" class="btn btn-success">Reveal</button>
+    <form class="row row-cols-sm-auto g-3 align-items-center" action="javascript:reveal();">
+      <div class="col-12">
+        <label class="form-label" for="revealRandomNumber">Random number</label>
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" id="revealRandomNumber" />
+      </div>
+      <div class="col-12">
+        <label class="form-label" for="revealTicketNumber">Ticket number</label>
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" id="revealTicketNumber" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Reveal</button>
+      </div>
     </form>
     <hr/>
     <h3 class="mt-3">Withdraw</h3>
-    <form class="form-inline" action="javascript:withdraw();">
-      <button type="submit" class="btn btn-info">Withdraw</button>
+    <form class="row row-cols-sm-auto g-3 align-items-center" action="javascript:withdraw();">
+      <div class="col-12">
+        <button type="submit" class="btn btn-info">Withdraw</button>
+      </div>
     </form>
     <hr/>
     <h3 class="mt-3">Hash</h3>
-    <form class="form-inline" action="javascript:hash();">
-      <label for="hashRandomNumber">Random number</label>
-      <input type="text" class="form-control ml-2 mr-2" id="hashRandomNumber" />
-      <button type="submit" class="btn btn-danger">Hash</button>
+    <form class="row row-cols-sm-auto g-3 align-items-center" action="javascript:hash();">
+      <div class="col-12">
+        <label class="form-label" for="hashRandomNumber">Random number</label>
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" id="hashRandomNumber" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-danger">Hash</button>
+      </div>
     </form>
     <p id="hashResult"></p>
   </div>
