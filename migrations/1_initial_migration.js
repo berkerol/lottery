@@ -1,5 +1,5 @@
-const Migrations = artifacts.require("Migrations");
+const Migrations = artifacts.require('Migrations'); // eslint-disable-line no-undef
 
-module.exports = function(deployer) {
+module.exports = (deployer) => {
   deployer.deploy(Migrations);
 };

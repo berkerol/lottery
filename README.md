@@ -1,6 +1,7 @@
 # Lottery
 
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=berkerol_lottery&metric=alert_status)](https://sonarcloud.io/dashboard?id=berkerol_lottery)
+[![CI](https://github.com/berkerol/lottery/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/berkerol/lottery/actions/workflows/lint.yml)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/lottery/issues)
 [![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
@@ -40,6 +41,10 @@ $ npm install
 $ ganache-cli
 $ npm test
 ```
+
+## Continous Integration
+
+It is setup using GitHub Actions in `.github/workflows/lint.yml`
 
 ## Contribution
 
